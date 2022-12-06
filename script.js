@@ -124,19 +124,29 @@ function gamefunction(event) {
 
 //THE SCORE HAS BEEN REACHED, AND RESTARTING THE GAME
     if(playercount == 3) {
-        playercount = 0 ;
-        computercount = 0;
-        playerpoint.innerText = 0;
-        computerpoint.innerText = 0;
-        alert('You won!')
+
+        setTimeout(() => {
+            alert('You won!')
+
+            playercount = 0 ;
+            computercount = 0;
+            playerpoint.innerText = 0;
+            computerpoint.innerText = 0;
+          
+          }, 100 )
+
     } 
     else if (computercount == 3) {
-        playercount = 0 ;
-        computercount = 0;
-        playerpoint.innerText = 0;
-        computerpoint.innerText = 0;
-        alert('Computer won! Try again')
-        
+
+        setTimeout(() => {
+            alert('Computer won! Try again')
+            
+            playercount = 0 ;
+            computercount = 0;
+            playerpoint.innerText = 0;
+            computerpoint.innerText = 0;
+          
+          }, 100 )
     }
 }
 
